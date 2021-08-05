@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		050273A326BC6C4400BBEEEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050273A226BC6C4400BBEEEB /* AppDelegate.swift */; };
 		050273A526BC6C4400BBEEEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050273A426BC6C4400BBEEEB /* SceneDelegate.swift */; };
-		050273A726BC6C4400BBEEEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050273A626BC6C4400BBEEEB /* ViewController.swift */; };
+		050273A726BC6C4400BBEEEB /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050273A626BC6C4400BBEEEB /* OnboardingViewController.swift */; };
 		050273AA26BC6C4400BBEEEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050273A826BC6C4400BBEEEB /* Main.storyboard */; };
 		050273AC26BC6C4400BBEEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050273AB26BC6C4400BBEEEB /* Assets.xcassets */; };
 		050273AF26BC6C4400BBEEEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050273AD26BC6C4400BBEEEB /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		0502739F26BC6C4400BBEEEB /* iSignage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSignage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050273A226BC6C4400BBEEEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		050273A426BC6C4400BBEEEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		050273A626BC6C4400BBEEEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		050273A626BC6C4400BBEEEB /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		050273A926BC6C4400BBEEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		050273AB26BC6C4400BBEEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		050273AE26BC6C4400BBEEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,29 @@
 			children = (
 				050273A226BC6C4400BBEEEB /* AppDelegate.swift */,
 				050273A426BC6C4400BBEEEB /* SceneDelegate.swift */,
-				050273A626BC6C4400BBEEEB /* ViewController.swift */,
-				050273A826BC6C4400BBEEEB /* Main.storyboard */,
+				050273B626BC6FF900BBEEEB /* View */,
+				050273B726BC700000BBEEEB /* Controller */,
 				050273AB26BC6C4400BBEEEB /* Assets.xcassets */,
 				050273AD26BC6C4400BBEEEB /* LaunchScreen.storyboard */,
 				050273B026BC6C4400BBEEEB /* Info.plist */,
 			);
 			path = iSignage;
+			sourceTree = "<group>";
+		};
+		050273B626BC6FF900BBEEEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				050273A826BC6C4400BBEEEB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		050273B726BC700000BBEEEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				050273A626BC6C4400BBEEEB /* OnboardingViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050273A726BC6C4400BBEEEB /* ViewController.swift in Sources */,
+				050273A726BC6C4400BBEEEB /* OnboardingViewController.swift in Sources */,
 				050273A326BC6C4400BBEEEB /* AppDelegate.swift in Sources */,
 				050273A526BC6C4400BBEEEB /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JWDevelops.iSignage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JWDevelops.iSignage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
