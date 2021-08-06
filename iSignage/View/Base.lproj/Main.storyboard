@@ -125,13 +125,45 @@
                     <view key="view" contentMode="scaleToFill" id="BLG-Q4-31J">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jeo-g4-k1d">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwB-3K-iVb">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="512"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="150"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIC-ox-naS">
+                                        <rect key="frame" x="0.0" y="512" width="1024" height="256"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jIC-ox-naS" firstAttribute="height" secondItem="rwB-3K-iVb" secondAttribute="height" multiplier="0.5" id="dYQ-iV-BKK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wKt-h6-KPd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jeo-g4-k1d" firstAttribute="top" secondItem="wKt-h6-KPd" secondAttribute="top" id="54h-VO-w58"/>
+                            <constraint firstItem="Jeo-g4-k1d" firstAttribute="bottom" secondItem="wKt-h6-KPd" secondAttribute="bottom" id="5vy-UX-2Vd"/>
+                            <constraint firstItem="Jeo-g4-k1d" firstAttribute="leading" secondItem="wKt-h6-KPd" secondAttribute="leading" id="KWb-XQ-saU"/>
+                            <constraint firstItem="Jeo-g4-k1d" firstAttribute="trailing" secondItem="wKt-h6-KPd" secondAttribute="trailing" id="sTG-3V-B94"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="rwB-3K-iVb" id="0C4-ox-FiW"/>
+                        <outlet property="timeDurationLabel" destination="jIC-ox-naS" id="iI1-fV-ZF8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3y-Ip-8MT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="88"/>
+            <point key="canvasLocation" x="728.90625" y="87.5"/>
         </scene>
     </scenes>
     <resources>

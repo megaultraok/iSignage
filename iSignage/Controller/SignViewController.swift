@@ -8,7 +8,9 @@
 import UIKit
 
 class SignViewController: UIViewController {
-
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var timeDurationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

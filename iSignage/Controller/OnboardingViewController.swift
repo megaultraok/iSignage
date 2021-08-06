@@ -20,9 +20,12 @@ class OnboardingViewController: UIViewController {
 
     // When the status button is pressed, segue to the next view with text and color
     @IBAction func statusButtonPressed(_ sender: UIButton) {
-        let signvc = SignViewController()
-        signvc.view.backgroundColor = sender.currentTitleColor
         performSegue(withIdentifier: "OnboardingToSign", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let signvc = segue.destination as! SignViewController
+        signvc.view.backgroundColor = (sender as? UIButton)?.currentTitleColor
     }
 }
 
