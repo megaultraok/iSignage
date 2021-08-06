@@ -27,7 +27,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="iSignage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Atf-a6-6mX"/>
+                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wca-TO-E8J"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYv-Wa-3UT">
@@ -64,7 +64,7 @@
                                             <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkx-ki-jwn"/>
+                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aJk-cJ-fxo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ng-11-9fa">
@@ -74,7 +74,7 @@
                                             <color key="titleColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAn-nK-wqd"/>
+                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFR-LR-vsz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp9-6c-W30">
@@ -84,7 +84,7 @@
                                             <color key="titleColor" systemColor="systemPurpleColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx0-xs-eio"/>
+                                            <action selector="statusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIp-kr-oG0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -106,15 +106,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qdo-bs-h7O"/>
+                    <connections>
+                        <outlet property="chillinButton" destination="zZN-Tw-p9c" id="Ge3-fm-RTf"/>
+                        <outlet property="sleepingButton" destination="yYv-Wa-3UT" id="aFh-lE-YHD"/>
+                        <outlet property="streamingButton" destination="Rp9-6c-W30" id="qmi-Xg-Je5"/>
+                        <outlet property="workingButton" destination="5ng-11-9fa" id="g4N-xg-Lso"/>
+                        <segue destination="1Be-dr-TwG" kind="presentation" identifier="OnboardingToSign" modalPresentationStyle="fullScreen" id="kkQ-v3-Jal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.882812499999996" y="88.28125"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign View Controller-->
         <scene sceneID="LPQ-hC-mhL">
             <objects>
-                <viewController id="1Be-dr-TwG" sceneMemberID="viewController">
+                <viewController id="1Be-dr-TwG" customClass="SignViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BLG-Q4-31J">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

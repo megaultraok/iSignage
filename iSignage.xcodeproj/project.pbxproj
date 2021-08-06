@@ -13,6 +13,7 @@
 		050273AA26BC6C4400BBEEEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050273A826BC6C4400BBEEEB /* Main.storyboard */; };
 		050273AC26BC6C4400BBEEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050273AB26BC6C4400BBEEEB /* Assets.xcassets */; };
 		050273AF26BC6C4400BBEEEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050273AD26BC6C4400BBEEEB /* LaunchScreen.storyboard */; };
+		050273BA26BC7C3D00BBEEEB /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050273B926BC7C3D00BBEEEB /* SignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		050273AB26BC6C4400BBEEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		050273AE26BC6C4400BBEEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		050273B026BC6C4400BBEEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		050273B826BC794900BBEEEB /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		050273B926BC7C3D00BBEEEB /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				050273AB26BC6C4400BBEEEB /* Assets.xcassets */,
 				050273AD26BC6C4400BBEEEB /* LaunchScreen.storyboard */,
 				050273B026BC6C4400BBEEEB /* Info.plist */,
+				050273B826BC794900BBEEEB /* TODO.md */,
 			);
 			path = iSignage;
 			sourceTree = "<group>";
@@ -79,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				050273A626BC6C4400BBEEEB /* OnboardingViewController.swift */,
+				050273B926BC7C3D00BBEEEB /* SignViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				050273A726BC6C4400BBEEEB /* OnboardingViewController.swift in Sources */,
 				050273A326BC6C4400BBEEEB /* AppDelegate.swift in Sources */,
 				050273A526BC6C4400BBEEEB /* SceneDelegate.swift in Sources */,
+				050273BA26BC7C3D00BBEEEB /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
